@@ -1,0 +1,6 @@
+{
+  "name": "Ahmadi Kontrakan",
+  "description": "Website Landing Page Resmi Ahmadi Kontrakan - Hunian Bersih, Tenang, Hebat & Nyaman dengan 7 Unit Kamar Kosongan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

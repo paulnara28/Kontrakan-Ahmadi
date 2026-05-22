@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-600: #2563eb;
+  --color-brand-navy: #0f172a;
+  --color-brand-light: #f8fafc;
+  --color-status-green: #22c55e;
+}
+
+:root {
+  --bg-white: #FFFFFF;
+  --bg-soft: #F8FAFC;
+  --navy: #0F172A;
+  --electric-blue: #2563EB;
+  --status-green: #22C55E;
+}
+
+/* Pulsing Indicator for Live Status */
+.pulse-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: var(--status-green);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  animation: pulsing-glow 2s infinite;
+}
+
+@keyframes pulsing-glow {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+/* Custom Nav shadow and subtle UI structures from Sleek Interface */
+.nav-shadow {
+  box-shadow: 0 2px 15px rgba(15, 23, 42, 0.05);
+}
+
+.spec-card-sleek {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 18px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.spec-card-sleek:hover {
+  border-color: var(--electric-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.06);
+}
+
+.whatsapp-btn-sleek {
+  background-color: var(--electric-blue);
+  color: white;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+  transition: all 0.2s;
+}
+
+.whatsapp-btn-sleek:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
