@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import { ROOMS_DATA } from '../data.ts';
-import { 
-  Camera, CheckCircle, Info, Flame, Grid, Shield, Zap, Droplet, Trash, Ban, Sparkles 
+import {
+  Camera, CheckCircle, Info, Flame, Grid, Shield, Zap, Droplet, Trash, Ban, Sparkles
 } from 'lucide-react';
+import roomHeroImg from '../assets/images/room_hero_1779427904467.png';
+import roomBathroomImg from '../assets/images/room_bathroom_1779427923654.png';
+import roomCorridorImg from '../assets/images/room_corridor_1779427943030.png';
+import roomParkingImg from '../assets/images/room_parking_1779427960324.png';
 
 export default function RoomDetails() {
   const photos = [
@@ -10,25 +14,25 @@ export default function RoomDetails() {
       id: 'photo-hero',
       title: 'Tampak Dalam Kamar',
       desc: 'Ruangan kosong yang rapi, bersih, dihiasi lantai keramik mulus, siap diatur dengan furnitur pribadi Anda semau Anda.',
-      src: '/src/assets/images/room_hero_1779427904467.png'
+      src: roomHeroImg
     },
     {
       id: 'photo-bathroom',
       title: 'Kamar Mandi Dalam',
       desc: 'Privasi penuh dengan kamar mandi dalam di setiap unit. Kebersihan terjaga kualitas keramiknya gres.',
-      src: '/src/assets/images/room_bathroom_1779427923654.png'
+      src: roomBathroomImg
     },
     {
       id: 'photo-corridor',
       title: 'Selasar Koridor Depan',
       desc: 'Area teras luar berlantai keramik yang bersih dan asri dengan beberapa tanaman vas, menciptakan udara sejuk siang hari.',
-      src: '/src/assets/images/room_corridor_1779427943030.png'
+      src: roomCorridorImg
     },
     {
       id: 'photo-parking',
       title: 'Area Parkir Mobil & Motor',
       desc: 'Terdapat area parkir kendaraan mobil dan motor di lahan kosong pekarangan depan rumah saja secara praktis.',
-      src: '/src/assets/images/room_parking_1779427960324.png'
+      src: roomParkingImg
     }
   ];
 
