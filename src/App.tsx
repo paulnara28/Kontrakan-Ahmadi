@@ -3,6 +3,7 @@ import AboutUs from './components/AboutUs.tsx';
 import ContactForm from './components/ContactForm.tsx';
 import RoomDetails from './components/RoomDetails.tsx';
 import FAQAndReviews from './components/FAQAndReviews.tsx';
+import roomHeroImg from './assets/images/room_hero_1779427904467.png';
 import { 
   Home, MapPin, Maximize2, ShieldCheck, Zap, Droplet, Clock, Phone, Menu, X, Check, Heart, Sparkles
 } from 'lucide-react';
@@ -231,7 +232,7 @@ export default function App() {
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 group">
                 <img
-                  src="/src/assets/images/room_hero_1779427904467.png"
+                  src={roomHeroImg}
                   alt="Ahmadi Kontrakan Kamar Kosong"
                   referrerPolicy="no-referrer"
                   className="w-full h-auto aspect-video md:aspect-square object-cover hover:scale-103 transition-transform duration-700"
